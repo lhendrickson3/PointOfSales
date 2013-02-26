@@ -20,17 +20,6 @@ public class Receipt {
         addToArray(item);
     }
     
-    public void addItemToSale(String productId, int qty) {
-	FakeDatabase db =  new FakeDatabase();
-        Product product = db.findProduct(productId);
-        
-		// if found, add the lineItem to the receipt
-		// but it's the receipt's job to do this!
-        if(productId != null) {
-            receipt.addLineItem(productId, qty);
-        }
-    }
-    
     private void addToArray(LineItem item) {
         LineItem[] tempItems = new LineItem[lineItem.length + 1];
         System.arraycopy(lineItem, 0, tempItems, 0, lineItem.length);
