@@ -9,7 +9,7 @@ public class Receipt {
     }
 
     private Customer lookupCustomerById(String customerId) {
-        Customer customer = new Customer(customerId);
+        customer = new Customer(customerId);
         return customer;
     }
 

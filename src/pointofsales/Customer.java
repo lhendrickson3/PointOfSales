@@ -6,6 +6,14 @@ public class Customer {
         private String firstName;
         private String lastName;
 
+        public Customer (){
+        
+        }
+        
+    Customer(String customerId) {
+        this.customerId = customerId;
+    }
+
     public String getCustomerId() {
         return customerId;
     }
