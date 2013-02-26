@@ -34,4 +34,10 @@ public class Receipt {
         }
         return grandTotal;
     }
+     
+     public void printReceipt() {
+         
+         String output = "Thanks for shopping with us!\n\n";
+         output += customer.getFullName() + "\n";
+     }
 }

@@ -13,17 +13,10 @@ public class CashRegister {
     }
 
     public void addItemToSale(String productId, int qty) {
-	FakeDatabase db =  new FakeDatabase();
-        Product product = db.findProduct(productId);
-        
-		// if found, add the lineItem to the receipt
-		// but it's the receipt's job to do this!
-        if(productId != null) {
-            receipt.addLineItem(productId, qty);
-        }
+	receipt.addLineItem(productId, qty);
     }
     
     public void finalizeSale() {
-        
+        receipt.printReceipt();
     }
 }
