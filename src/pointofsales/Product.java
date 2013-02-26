@@ -1,4 +1,3 @@
-
 package pointofsales;
 
 public class Product {
@@ -7,11 +6,11 @@ public class Product {
     private String productName;
     private double unitCost;
 
-    public Product(String productID, String productName, double unitCost, DiscountStrategy discount) {
+    public Product(String productID, String productName, double unitCost) {
         this.productID = productID;
         this.productName = productName;
         this.unitCost = unitCost;
-        this.discount = discount;
+        
     }
     
     public double getDiscountAmt(int qty){
@@ -26,11 +25,11 @@ public class Product {
         this.productID = prodID;
     }
 
-    public String getProdName() {
+    public String getProductName() {
         return productName;
     }
 
-    public void setProdName(String prodName) {
+    public void setProductName(String prodName) {
         this.productName = prodName;
     }
 
@@ -42,12 +41,6 @@ public class Product {
         this.unitCost = unitCost;
     }
 
-    public DiscountStrategy getDiscount() {
-        return discount;
-    }
-
-    public void setDiscount(DiscountStrategy discount) {
-        this.discount = discount;
-    }
+  
 
 }

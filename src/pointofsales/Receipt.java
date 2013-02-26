@@ -2,20 +2,9 @@
 package pointofsales;
 
 public class Receipt {
-        private Customer customer;
-        private int qty;
+       private Customer customer;
+       private LineItem lineItem; 
 
-    public int getQty() {
-        return qty;
-    }
-
-    public void setQty(int qty) {
-        this.qty = qty;
-    }
-
-    public Receipt(int qty) {
-        this.qty = qty;
-    }
 
     public Receipt(String customerId) {
         customer = lookupCustomerById(customerId);

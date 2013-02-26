@@ -1,4 +1,3 @@
-
 package pointofsales;
 
 public class QuantityDiscount implements DiscountStrategy{
