@@ -22,6 +22,7 @@ public class CashRegister {
             receipt.addLineItem(productId, qty);
         }
     }
+    
     public void finalizeSale() {
         
     }
