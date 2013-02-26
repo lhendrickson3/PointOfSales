@@ -1,6 +1,5 @@
 package pointofsales;
 
-
 public class CashRegister {
     private Receipt receipt;
     
