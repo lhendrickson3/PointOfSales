@@ -12,7 +12,7 @@ public class NoDiscount implements DiscountStrategy{
 
 
     public double getDiscountAmt(double unitCost, int qty) {
-        return unitCost * qty;
+        return 0;
     }
     
 }

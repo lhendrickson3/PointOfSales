@@ -2,18 +2,21 @@ package pointofsales;
 
 public class Receipt {
        private Customer customer;
-       private LineItem lineItem; 
+       private LineItem[] lineItem = new LineItem[0]; 
+          private FakeDatabase db;
 
-    public Receipt(String customerId) {
+    public Receipt(String customerId, FakeDatabase db) {
+        this.db = db;
         customer = lookupCustomerById(customerId);
     }
 
     private Customer lookupCustomerById(String customerId) {
-        customer = new Customer(customerId);
+        customer = db.findCustomer(customerId);
         return customer;
     }
 
-    void addItemToSale(String prodId, int qty) {
+    void addItemToSale(String productId, int qty) {
+        LineItem item = new LineItem(productId, qty, db);
         
     }
 }
