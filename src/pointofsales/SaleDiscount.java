@@ -1,7 +1,7 @@
 
 package pointofsales;
 
-public class SaleDiscount {
+public class SaleDiscount implements DiscountStrategy{
     private double discountRate;
 
     public SaleDiscount(double discountRate) {
@@ -14,6 +14,10 @@ public class SaleDiscount {
 
     public void setDiscountRate(double discountRate) {
         this.discountRate = discountRate;
+    }
+    
+    public double getDiscountAmt(double unitCost, int qty) {
+        return (getDiscountRate() * unitCost) * qty;
     }
     
 }

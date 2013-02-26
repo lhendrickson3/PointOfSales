@@ -27,9 +27,9 @@ public class QuantityDiscount implements DiscountStrategy{
         this.minimumQty = minimumQty;
     } 
 
-    @Override
+ 
     public double getDiscountAmt(double unitCost, int qty) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return getDiscountRate() * (unitCost * qty);
     }
     
 }
