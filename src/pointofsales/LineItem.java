@@ -16,4 +16,8 @@ public class LineItem {
     public void setQty(int qty) {
         this.qty = qty;
     }
+    
+    public double getOrigPriceSubtotal(){
+    return product.getUnitCost();
+    }
 }
