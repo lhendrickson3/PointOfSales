@@ -4,9 +4,9 @@ public class LineItem {
     private Product product;
     private int qty;
 
-    public LineItem(String prodId, int qty, FakeDatabase db) {
+    public LineItem(String productId, int qty, FakeDatabase db) {
         this.qty = qty;
-        product = db.findProduct(prodId);
+        product = db.findProduct(productId);
     }
      
     public int getQty() {
