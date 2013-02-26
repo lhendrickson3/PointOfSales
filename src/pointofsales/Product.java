@@ -2,6 +2,7 @@ package pointofsales;
 
 public class Product {
     private DiscountStrategy discount;
+    
     private String productID;
     private String productName;
     private double unitCost;
