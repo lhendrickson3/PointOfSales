@@ -3,12 +3,12 @@ package pointofsales;
 public class Product {
     private DiscountStrategy discount;
     
-    private String productID;
+    private String productId;
     private String productName;
     private double unitCost;
 
-    public Product(String productID, String productName, double unitCost) {
-        this.productID = productID;
+    public Product(String productId, String productName, double unitCost) {
+        this.productId = productId;
         this.productName = productName;
         this.unitCost = unitCost;  
     }
@@ -17,20 +17,20 @@ public class Product {
         return discount.getDiscountAmt(unitCost, qty);
     }
 
-    public String getProductID() {
-        return productID;
+    public String getProductId() {
+        return productId;
     }
 
-    public void setProductID(String prodID) {
-        this.productID = prodID;
+    public void setProductId(String productId) {
+        this.productId = productId;
     }
 
     public String getProductName() {
         return productName;
     }
 
-    public void setProductName(String prodName) {
-        this.productName = prodName;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
     public double getUnitCost() {
