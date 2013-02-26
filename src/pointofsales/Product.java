@@ -7,10 +7,11 @@ public class Product {
     private String productName;
     private double unitCost;
 
-    public Product(String productId, String productName, double unitCost) {
+    public Product(String productId, String productName, double unitCost, DiscountStrategy ds) {
         this.productId = productId;
         this.productName = productName;
         this.unitCost = unitCost;  
+        discount = ds;
     }
     
     public double getDiscountAmt(int qty){
