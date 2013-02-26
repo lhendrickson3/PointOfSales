@@ -9,8 +9,7 @@ public class Product {
     public Product(String productID, String productName, double unitCost) {
         this.productID = productID;
         this.productName = productName;
-        this.unitCost = unitCost;
-        
+        this.unitCost = unitCost;  
     }
     
     public double getDiscountAmt(int qty){
@@ -40,7 +39,4 @@ public class Product {
     public void setUnitCost(double unitCost) {
         this.unitCost = unitCost;
     }
-
-  
-
 }

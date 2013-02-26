@@ -1,4 +1,3 @@
-
 package pointofsales;
 
 public class PointOfSales {

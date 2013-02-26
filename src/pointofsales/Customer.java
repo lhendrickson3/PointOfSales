@@ -5,9 +5,9 @@ public class Customer {
         private String firstName;
         private String lastName;
 
-        public Customer (){
+    public Customer (){
         
-        }
+    }
         
     Customer(String customerId) {
         this.customerId = customerId;

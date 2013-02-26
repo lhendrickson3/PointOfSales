@@ -3,6 +3,11 @@ package pointofsales;
 public class QuantityDiscount implements DiscountStrategy{
     private double discountRate;
     private int minimumQty;
+    
+    public QuantityDiscount(double discountRate, int minimumQty) {
+        this.discountRate = discountRate;
+        this.minimumQty = minimumQty;
+    } 
 
     public double getDiscountRate() {
         return discountRate;
@@ -19,13 +24,6 @@ public class QuantityDiscount implements DiscountStrategy{
     public void setMinimumQty(int minimumQty) {
         this.minimumQty = minimumQty;
     }
-    
-
-    public QuantityDiscount(double discountRate, int minimumQty) {
-        this.discountRate = discountRate;
-        this.minimumQty = minimumQty;
-    } 
-
  
     public double getDiscountAmt(double unitCost, int qty) {
         return getDiscountRate() * (unitCost * qty);

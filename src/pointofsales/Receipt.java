@@ -1,10 +1,8 @@
-
 package pointofsales;
 
 public class Receipt {
        private Customer customer;
        private LineItem lineItem; 
-
 
     public Receipt(String customerId) {
         customer = lookupCustomerById(customerId);
