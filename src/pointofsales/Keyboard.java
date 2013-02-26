@@ -8,6 +8,6 @@ package pointofsales;
  *
  * @author User
  */
-public interface InputStrategy {
+public class Keyboard {
     
 }
