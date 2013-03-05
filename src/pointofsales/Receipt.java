@@ -3,7 +3,7 @@ package pointofsales;
 public class Receipt {
        private Customer customer;
        private LineItem[] lineItem = new LineItem[0]; 
-          private FakeDatabase db;
+       private FakeDatabase db;
 
     public Receipt(String customerId, FakeDatabase db) {
         this.db = db;
@@ -35,9 +35,20 @@ public class Receipt {
         return grandTotal;
     }
      
-     public void printReceipt() {
+     public String printReceipt() {
          
          String output = "Thanks for shopping with us!\n\n";
          output += customer.getFullName() + "\n";
+         output += getProductList();
+         return output;
+         
+     }
+     
+     private String getProductList(){
+         String str = "";
+         for(int i=0 ; i < lineItem.length; i++){
+             str += lineItem[i].getProductName() + " | " + lineItem[i].getQty() + "\n";
+         }
+         return str;
      }
 }

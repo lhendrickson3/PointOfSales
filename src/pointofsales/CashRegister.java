@@ -16,7 +16,8 @@ public class CashRegister {
 	receipt.addLineItem(productId, qty);
     }
     
-    public void finalizeSale() {
-        receipt.printReceipt();
+    public String finalizeSale() {
+        return receipt.printReceipt();
     }
+    
 }

@@ -13,6 +13,7 @@ public class PointOfSales {
         // optionally, add another item 
         cr.addItemToSale("A101", 1);
         // finalize sale
+        System.out.println(cr.finalizeSale());
         
     }
 }

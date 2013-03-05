@@ -20,4 +20,8 @@ public class LineItem {
     public double getOrigPriceSubtotal(){
     return product.getUnitCost();
     }
+    
+    public String getProductName(){
+        return product.getProductName();
+    }
 }
